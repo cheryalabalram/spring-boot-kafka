@@ -1,0 +1,6 @@
+spring:
+  kafka:
+    consumer:
+      auto-offset-reset: earliest
+  application:
+    name: demo-spring-batch-kafka

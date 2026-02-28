@@ -5,16 +5,16 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.2.5</version>
+		<version>3.5.11</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.balram.springbatch.kafka</groupId>
-	<artifactId>demo-spring-batch-kafka</artifactId>
+	<groupId>com.balram.spring.kafka</groupId>
+	<artifactId>demo-spring-kafka-producer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>demo-spring-batch-kafka</name>
+	<name>kafka-producer</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
-		<java.version>22</java.version>
+		<java.version>25</java.version>
 	</properties>
 	<dependencies>
 		<dependency>

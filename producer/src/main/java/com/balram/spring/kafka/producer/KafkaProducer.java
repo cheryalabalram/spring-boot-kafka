@@ -1,11 +1,11 @@
-package com.balram.springbatch.kafka.producer;
+package com.balram.spring.kafka.producer;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import static com.balram.springbatch.kafka.DemoSpringBatchKafkaApplication.TOPIC_NAME;
+import static com.balram.spring.kafka.DemospringKafkaApplication.TOPIC_NAME;
 
 @RestController
 public class KafkaProducer {
@@ -15,7 +15,7 @@ public class KafkaProducer {
 
     @GetMapping(value = "publish")
     public void publish(){
-        kafkaTemplate.send(TOPIC_NAME, ""+Math.random());
+        kafkaTemplate.send(TOPIC_NAME, ""+Math.random(),""+Math.random());
     }
 }
 
